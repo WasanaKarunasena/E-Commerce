@@ -1,0 +1,148 @@
+.order-form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form-container h2,
+.order-form-container h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-form-container input,
+.order-form-container textarea,
+.order-form-container select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.order-form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #093360;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.order-form-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.order-form-container button:hover:not(:disabled) {
+  background-color: #0b4685;
+}
+
+/* Product Summary Section */
+.product-summary {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.total-summary {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+/* Notification Styles */
+.custom-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: slideFade 3s ease-in-out;
+}
+
+.custom-notification.success {
+  background-color: #28a745;
+}
+
+.custom-notification.error {
+  background-color: #dc3545;
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .product-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    margin-bottom: 10px;
+  }
+
+  .total-summary {
+    text-align: center;
+  }
+}

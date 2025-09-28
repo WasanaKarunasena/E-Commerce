@@ -1,0 +1,107 @@
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f8fb;
+}
+
+.success-card {
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.success-title {
+  color: #28a745;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.order-id {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #0056b3;
+}
+.orders-link {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.orders-link:hover {
+  background-color: #45a049;
+}
+/* Style for the button group container */
+.button-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Base button style */
+.btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Return to Shop button */
+.back-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background-color: #4f95c4;
+}
+
+/* View My Orders button */
+.orders-btn {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.orders-btn:hover {
+  background-color: #1e874b;
+}
+.receipt-btn {
+  background-color: #59bcd5;
+  color: white;
+ 
+}
+
+.receipt-btn:hover {
+  background-color: #45a049;
+}
+
+

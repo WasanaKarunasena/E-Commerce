@@ -1,0 +1,32 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 90vh;
+}
+
+.popular h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #374151;
+}
+.popular hr{
+    width: 200px;
+    height: 6px;
+    background-color: #374151;
+    border-radius: 10px;
+
+}
+.popular-items{
+    margin: 50px;
+    display: flex;
+    gap: 30px;
+    
+}
+.popular-items img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image is cropped proportionally to fit the dimensions */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}

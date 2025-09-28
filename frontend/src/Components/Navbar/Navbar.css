@@ -1,0 +1,230 @@
+/* Desktop Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 1px 3px -2px black;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo p {
+  color: #EB1E21;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  gap: 3px;
+}
+
+.nav-menu hr {
+  border: none;
+  height: 3px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+
+.nav-login-cart {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.nav-login-cart button {
+  width: 160px;
+  height: 50px;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cart-link {
+  position: relative;              /* anchor the badge */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-link img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Desktop cart badge (no negative margins) */
+.nav-cart-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  background: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .nav-menu { gap: 30px; font-size: 18px; }
+  .nav-login-cart { gap: 25px; }
+  .nav-logo p { font-size: 30px; }
+  .nav-login-cart button {
+    width: 130px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Hide mobile navbar by default */
+.mobile-navbar { display: none; }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .desktop-navbar { display: none !important; }
+
+  .mobile-navbar {
+    display: block;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 3px -2px black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .mobile-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+  }
+
+  .mobile-logo { display: flex; align-items: center; gap: 10px; }
+  .mobile-logo img { height: 35px; }
+
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .mobile-actions button {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-cart {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-cart img { width: 24px; height: 24px; }
+
+  /* Mobile badge */
+  .mobile-cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .mobile-dropdown {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid #eee;
+    animation: slideDown 0.3s ease;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .mobile-dropdown a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .mobile-dropdown a:hover {
+    background-color: #f5f5f5;
+    color: #EB1E21;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-5%); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
