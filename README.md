@@ -19,7 +19,7 @@ A fully functional e-commerce platform with cart, payment gateway, and admin das
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/WasanaKarunasena/ecommerce-website.git
+   git clone https://github.com/WasanaKarunasena/E-Commerce.git
 Install dependencies:
 
 cd ecommerce
