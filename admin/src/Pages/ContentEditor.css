@@ -1,0 +1,80 @@
+.content-editor-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9f9f9;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.content-editor {
+  width: 100%;
+}
+
+.content-editor h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.content-editor select {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.content-editor .form-group {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-editor .form-group h4 {
+  margin-bottom: 10px;
+}
+
+.content-editor input[type="text"],
+.content-editor input[type="file"] {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-editor button[type="submit"] {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.content-editor button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.content-editor .existing-preview img {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive grid layout for wider screens */
+@media (min-width: 1000px) {
+  .content-editor form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .content-editor form button[type="submit"] {
+    grid-column: span 2;
+  }
+}

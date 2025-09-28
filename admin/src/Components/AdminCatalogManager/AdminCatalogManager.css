@@ -1,0 +1,165 @@
+.admin-catalog-manager {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.admin-catalog-manager h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 1.2px;
+}
+
+.admin-catalog-manager h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.admin-catalog-manager form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.admin-catalog-manager form:hover {
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+}
+
+.admin-catalog-manager input,
+.admin-catalog-manager textarea,
+.admin-catalog-manager select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.25s ease;
+  resize: vertical;
+  font-family: inherit;
+  color: #2c3e50;
+}
+
+.admin-catalog-manager input:focus,
+.admin-catalog-manager textarea:focus,
+.admin-catalog-manager select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px #3498dbaa;
+}
+
+.admin-catalog-manager textarea {
+  min-height: 70px;
+  max-height: 150px;
+}
+
+.admin-catalog-manager button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-catalog-manager button:hover {
+  background-color: #2980b9;
+}
+
+.error-msg,
+.success-msg {
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.error-msg {
+  background-color: #fdecea;
+  color: #e74c3c;
+  border: 1.5px solid #e74c3c;
+}
+
+.success-msg {
+  background-color: #e8f8f5;
+  color: #27ae60;
+  border: 1.5px solid #27ae60;
+}
+
+/* Table styling */
+
+.admin-catalog-manager table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  background: white;
+  box-shadow: 0 2px 7px rgb(0 0 0 / 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-catalog-manager table thead {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.admin-catalog-manager table th,
+.admin-catalog-manager table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.admin-catalog-manager table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+.admin-catalog-manager table img {
+  max-height: 40px;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .admin-catalog-manager {
+    padding: 15px;
+  }
+
+  .admin-catalog-manager form {
+    padding: 15px 15px;
+  }
+
+  .admin-catalog-manager table th,
+  .admin-catalog-manager table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .admin-catalog-manager button {
+    font-size: 16px;
+  }
+}

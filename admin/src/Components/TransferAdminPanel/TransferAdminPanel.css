@@ -1,0 +1,111 @@
+/* TransferAdminPanel.css */
+
+.transfer-admin-panel {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transfer-admin-panel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.transfer-admin-panel h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #555;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.transfer-admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.transfer-admin-panel th,
+.transfer-admin-panel td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  font-size: 14px;
+}
+
+.transfer-admin-panel th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.transfer-admin-panel tr:hover {
+  background-color: #f9f9f9;
+}
+
+.transfer-admin-panel tr[style*="background-color: #e7f3ff"] {
+  /* Highlight current user row */
+  background-color: #e7f3ff !important;
+  font-weight: bold;
+}
+
+.transfer-admin-panel button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transfer-admin-panel button:disabled {
+  background-color: #a3c0ff;
+  cursor: not-allowed;
+}
+
+.transfer-admin-panel button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.transfer-admin-panel em {
+  color: #666;
+  font-style: italic;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Optional: Style the notification container if needed */
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  z-index: 1000;
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}
